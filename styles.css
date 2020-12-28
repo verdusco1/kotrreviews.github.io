@@ -145,8 +145,8 @@ body {
   .tiles {
     display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(6, 10vw);
-  grid-gap: 2rem;
+  grid-template-rows: repeat(6, 8.5vw);
+  grid-gap: 1rem;
 
 
   }
@@ -168,7 +168,6 @@ body {
     display:block;
     transition: all 0.3s ease-out;
     cursor: pointer;
-
 
   }
 
