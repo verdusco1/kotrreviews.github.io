@@ -256,3 +256,37 @@ body {
   .read-time p {
     margin-right: 50px;
   }
+
+
+  /* footer */
+
+  .footer {
+    background: ;
+    height: 20vh;
+    border-top: solid 1px rgb(199, 198, 198);
+    box-shadow: 0 4px 2px -2px rgb(199, 198, 198);
+  }
+
+  .subscribe {
+    text-align: center;
+    margin: 10px 0px 100px 0px;
+
+  }
+
+  .subscribe h2 {
+    padding: 30px;
+  }
+
+  .social {
+    text-align: center;
+  height: 50px;
+  margin-bottom: 0px;
+
+  }
+
+  .social img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px 5px;
+  }
