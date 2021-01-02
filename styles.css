@@ -8,125 +8,120 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#navbar {
-    height:10vh;
-    width: 100%;
-    margin:0;
-    top:0;
-    position: fixed;
-    background: #f7f7f7 ;
-    letter-spacing: 3px;
-
-    box-shadow: 0 4px 2px -2px rgb(199, 198, 198);
-
-}
-
-.burger {
+/*Hamburger*/
+nav {
+  height:10vh;
+  width: 100%;
+  margin:0;
+  top:0;
+  position: fixed;
+  background: #f7f7f7 ;
+  letter-spacing: 3px;
+  box-shadow: 0 3px 2px -2px rgb(199, 198, 198);
 
 }
-
-.line {
-
-}
-
-
 
 .nav-links {
-    margin: 0;
-    height: 100%;
-    display: flex;
-    list-style: none;
-    justify-content:center;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .nav-links li {
-    margin: 0px 20px;
+  margin:0px 15px
 }
 
 .nav-links li a {
-    text-decoration: none;
-    font-weight: 600;
-    color: rgb(63, 63, 63);
-    transition: .5s;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+  font-size: 16px;
+  padding:0px 10px 5px 10px;
+  border-bottom: 3px solid transparent;
+
+
 }
 
 .nav-links li a:hover {
-    color: rgb(145, 145, 145);
+  color: rgb(173, 173, 173);
+  transition: 1s;
 
 }
 
+
+
 @media screen and (max-width: 768px) {
-    .line {
-      width: 30px;
-      height: 3px;
-      background:  rgb(0, 0, 0);
-      margin: 5px;
-    }
-    nav {
-      position: fixed;
-    }
-
-    .burger {
-      position: absolute;
-      cursor: pointer;
-      right: 5%;
-      top: 50%;
-      transform: translate(-5%, -50%);
-      z-index: 2;
-    }
-
-    .nav-links {
-      position: fixed;
-      align-items: center;
-      background: rgb(116, 41, 53);
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(100px at 90% -15%);
-      -webkit-clip-path: circle(100px at 90% -15%);
-      transition: all 1s ease-out;
-      pointer-events: none;
-
-    }
-    .nav-links.open {
-      clip-path: circle(2000px at 90% -10%);
-      -webkit-clip-path: circle(2000px at 90% -10%);
-      pointer-events: all;
-    }
-    .landing {
-      flex-direction: column;
-    }
-    .nav-links li {
-      opacity: 0;
-    }
-    .nav-links li a {
-
-      font-size: 25px;
-    }
-    .nav-links li:nth-child(1) {
-      transition: all 0.5s ease 0.2s;
-    }
-    .nav-links li:nth-child(2) {
-      transition: all 0.5s ease 0.4s;
-    }
-    .nav-links li:nth-child(3) {
-      transition: all 0.5s ease 0.6s;
-    }
-
-    li.fade {
-      opacity: 1;
-    }
+  .line {
+    width: 30px;
+    height: 3px;
+    background:  rgb(102, 102, 102);
+    margin: 5px;
+  }
+  nav {
+    position: fixed;
   }
 
-  .nav-links .current {
-    border-bottom: solid rgb(221, 203, 203) 3px;
-    color: pink;
-    transition: 1s;
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
   }
 
+  .nav-links {
+    position: fixed;
+    align-items: center;
+    background:  rgb(197, 194, 194);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    clip-path: circle(100px at 5% -15%);
+    -webkit-clip-path: circle(100px at 5% -15%);
+  }
+  .nav-links.open {
+    clip-path: circle(2000px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% 10%);
+    pointer-events: all;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .nav-links li {
+    opacity: 0;
+    margin: 2rem 0rem;
+  }
+  .nav-links li a {
 
-  /* end of nav*/
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+}
+
+.nav-links .current {
+  border-bottom: solid rgb(102, 102, 102) 1px;
+  color: rgb(63, 63, 63);
+  transition: 1s;
+}
+
+
+/*Hamburger*/
 
   *,
 *::after,
@@ -161,7 +156,6 @@ body {
   }
 
   .tile {
-    background: blue;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -181,6 +175,11 @@ body {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
+    border-right: solid 3px black;
+    border-bottom: solid 3px black;
+
+    padding-right:15px;
+    padding-bottom:15px;
   }
 
   .tile-2 {
@@ -273,12 +272,13 @@ body {
 
   .subscribe {
     text-align: center;
-    margin: 10px 0px 100px 0px;
+    margin: 10px 0px 50px 0px;
 
   }
 
   .subscribe h2 {
     padding: 30px;
+
   }
 
   .social  {
@@ -296,6 +296,6 @@ body {
 
 
   .container {
-    width: 200%;
-    background: red;
+    width: 100%;
+    background: #f7f7f7 ;
   }
