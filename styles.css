@@ -11,13 +11,12 @@ body {
 }
 
 /*Hamburger*/
-nav {
+#navbar {
   height:8vh;
   width: 100%;
   margin:0;
   top:0;
-  position: ;
-  background: #f7f7f7 ;
+  position: fixed;
   letter-spacing: 3px;
   box-shadow: 0 3px 2px -2px rgb(199, 198, 198);
   background-color: #f7f7f7; /* For browsers that do not support gradients */
@@ -31,6 +30,7 @@ nav {
   height: 100%;
   justify-content: center;
   align-items: center;
+
 
 }
 
@@ -60,7 +60,7 @@ nav {
   .line {
     width: 30px;
     height: 3px;
-    background:  rgb(102, 102, 102);
+    background:  #eefbfb;
     margin: 5px;
   }
   nav {
@@ -79,7 +79,7 @@ nav {
   .nav-links {
     position: fixed;
     align-items: center;
-    background:  rgb(197, 194, 194);
+    background:  #203647;
     height: 100vh;
     width: 100%;
     flex-direction: column;
@@ -124,6 +124,25 @@ nav {
 }
 
 
+.social-links {
+  height: 8vh;
+  top: 0px;
+  right: 20px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  position: fixed;
+
+}
+
+.social-links img {
+  margin: 0px 10px;
+  width: 50%;
+  height:auto;
+  object-fit: cover;
+}
+
+
 /*Hamburger*/
 
   *,
@@ -137,16 +156,74 @@ nav {
   .previews-container {
     background:;
     width: 80%;
-    margin:13vh auto;
+    margin:10vh auto;
   }
 
   .tiles {
     display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(6, 7.5vw);
+  grid-template-rows: repeat(6, 8vw);
   grid-gap: 1rem;
 
 
+  }
+
+  @media screen and (max-width: 1850px) {
+    .previews-container {
+      background:;
+      width: 100%;
+      margin:10vh auto;
+    }
+
+    .read-time {
+      display:none;
+    }
+  }
+
+  @media screen and (max-width: 1850px) {
+    .previews-container {
+      background:;
+      width: 100%;
+      margin:10vh auto;
+    }
+
+    .read-time {
+      display:none;
+    }
+  }
+
+  @media screen and (max-width: 1750px) {
+    .tiles {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      grid-gap: 1rem;
+
+    }
+
+    .tiles div {
+      flex: 0 45%;
+    }
+
+    .text-preview {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 668px) {
+    .tiles {
+      display: block;
+
+    }
+
+    .previews-container {
+      margin:8vh auto 0px auto;
+    }
+
+
+    .text-preview {
+      display: none;
+    }
   }
 
 
@@ -158,9 +235,9 @@ nav {
     transition: all 0.3s ease-out;
     cursor: pointer;
     padding:15px;
-    background-color: ;
+    background-color: #eefbfb;
     overflow: ;
-
+    box-shadow: 0 2px 20px rgba(218, 214, 214, 0.911), 0 1px 1px rgb(170, 170, 170);
 
   }
 
@@ -170,6 +247,8 @@ nav {
     height: 60%;
     width: 100%;
     border-radius:5px;
+
+
   }
 
   .tile-1 img {
@@ -255,10 +334,12 @@ nav {
     margin-top:5px;
     width: 100%;
     margin-left: auto;
-    background:;
+    color: rgb(172, 172, 172);
+    font-size: 15px;
   }
 
   .genre {
+    font-weight: 900;
     color: #007cc7;
     font-family: 'Poppins', sans-serif;
   }
@@ -266,32 +347,70 @@ nav {
 
 
   /* footer */
+  .foot-container {
+    bottom: 0px;
+    background: #;
+    height: 50vh;
+    background-image: linear-gradient(#007cc7, #12232e);
+  }
 
   .footer {
-
-    height: 40vh;
-    border-top: solid 1px rgb(199, 198, 198);
-    box-shadow: 0 4px 2px -2px rgb(199, 198, 198);
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
   }
 
   .footer div {
     margin-bottom: ;
+    color: #eefbfb;
   }
 
   .subscribe {
     text-align: center;
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 10px 0px;
+    background: #;
 
   }
 
   .subscribe h2 {
-    padding: 30px;
-
+    margin-bottom: 1rem;
   }
 
+  .subscribe input {
+
+    outline: none;
+    -webkit-appearance: none;
+    border:none;
+    height: 50px;
+    width: 300px;
+    padding:15px;
+    margin: 0px 5px;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .subscribe input {
+      margin-bottom:1rem;
+    }
+  }
+  .subscribe button {
+    color: #eefbfb;
+    background:#4da8da;
+    border:none;
+    border-radius: 5px;
+    padding:px;
+    width: 100px;
+    height: 50px;
+    margin: 0px 5px;
+  }
+
+
+
   .social  {
+    margin-top:3rem;
     text-align: center;
-  height: 50px;
+    height: 40px;
 
   }
 
