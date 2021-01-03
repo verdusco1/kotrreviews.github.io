@@ -156,7 +156,7 @@ body {
   .previews-container {
     background:;
     width: 80%;
-    margin:10vh auto;
+    margin:10vh auto 02vh auto;
   }
 
   .tiles {
@@ -208,6 +208,9 @@ body {
     .text-preview {
       display: none;
     }
+    .previews-container {
+      margin:10vh auto 2vh auto;
+    }
   }
 
   @media screen and (max-width: 668px) {
@@ -217,7 +220,7 @@ body {
     }
 
     .previews-container {
-      margin:8vh auto 0px auto;
+      margin:10vh auto 2vh auto;
     }
 
 
@@ -361,6 +364,7 @@ body {
   }
 
   .footer {
+    width: 100%;
     display:flex;
     justify-content: center;
     align-self: center;

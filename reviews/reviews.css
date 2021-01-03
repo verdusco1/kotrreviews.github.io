@@ -3,12 +3,14 @@
     background:re;
     height: 100%;
     width: 80%;
+    background: ;
     display:flex;
     flex-direction: column;
     align-items: center;
     text-align: ;
 
 }
+
 
 #title {
     font-size: 3rem;
@@ -57,4 +59,91 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin:1rem 0rem;
+}
+
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: ease-out 0.25s;
+  }
+
+  .modal.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal p {
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+  }
+
+  .caption {
+    margin-top: 500px;
+  }
+
+  .full-img {
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: auto;
+    top:-50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+
+  }
+
+  .full-img.open {
+    transform: translate(-50%, 50%) scale(1);
+  }
+
+
+
+@media screen and (max-width: 1024px) {
+  .review-container {
+    margin:13vh auto 3rem auto;
+    background:re;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: ;
+
+}
+.article {
+  margin: 0rem 0rem;
+  width: 80%;
+  line-height: 1.6;
+  background-color: ;
+}
+
+#title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.full-img {
+  position: absolute;
+  object-fit: cover;
+  height: 80vh;
+  width: auto;
+  top:-30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.25s ease-out;
+
+}
+
 }

@@ -39,7 +39,7 @@
         <p>|  Dec 30, 2020</p>
     </div>
     <div class="review-img">
-        <img src="https://picsum.photos/2000" alt="screenshot">
+        <img src="https://picsum.photos/2000" data-original="https://picsum.photos/2000" alt="screenshot">
     </div>
     <div class="article">
         <p>When I play a game on my Android, I don't really expect high quality, I expect a game that would be okay for mobile. This game is different, however, because it was made for Steam and then ported to the phone. This makes my expectations a lot higher.</p>
@@ -50,6 +50,10 @@
     </div>
 </div>
 
+<div class="modal">
+    <img src="" alt="" class="full-img">
+    <p class="caption"></p>
+</div>
 
 <!--container-->
 
@@ -61,9 +65,9 @@
             <button class="btn btn-primary col-sm-6" type="submit" name="submit" id="submit-button">Submit</button>
         </div>
         <div class="row social">
-            <a href="https://twitter.com/SirJAAguilar" target="_blank"><img src="./images/Twitter.png" alt=""></a>
-            <a href="https://www.facebook.com/KOTRAnimation" target="_blank"><img src="./images/Facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/cg_aggy/" target="_blank"><img src="./images/Instagram.png" alt=""></a>
+            <a href="https://twitter.com/SirJAAguilar" target="_blank"><img src="../images/Twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/KOTRAnimation" target="_blank"><img src="../images/Facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/cg_aggy/" target="_blank"><img src="../images/Instagram.png" alt=""></a>
         </div>
     </div>
 <!--footer end-->
@@ -95,3 +99,32 @@
 
 
     </script>
+
+    <!--enlarge article images-->
+    <script>
+        const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".review-container img");
+const original = document.querySelector(".full-img");
+const caption = document.querySelector(".caption");
+
+previews.forEach((preview) => {
+   preview.addEventListener('click', () => {
+       modal.classList.add("open");
+       original.classList.add("open");
+
+       const originalSrc = preview.getAttribute("data-original");
+       original.src = `${originalSrc}`;
+       const altText = preview.alt;
+       caption.textContent = altText;
+
+   })
+})
+
+
+modal.addEventListener('click', (e) => {
+   if (e.target.classList.contains("modal")) {
+       modal.classList.remove("open");
+       original.classList.remove("open");
+}})
+       </script>
+    <!--enlarge article images-->
