@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="reviews.css">
+    <title>Reviews</title>
+</head>
+<body>
+
+
+    <!--Hamburger-->
+    <nav id="navbar">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a class="current" href="../index.html">Reviews</a></li>
+            <li><a href="../opinion.html">News & Opinion</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://twitter.com/SirJAAguilar" target="_blank"><img src="../images/twitter-24.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/KOTRAnimation" target="_blank"><img src="../images/facebook-3-24.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/cg_aggy/" target="_blank"><img src="../images/instagram-24.png" alt="instagram"></a>
+        </div>
+      </nav>
+    <!--Hamburger end-->
+
+<!--container-->
+<div class="review-container">
+    <h1 id="title">Party Hard Go - 1/5 - Shovelware</h1>
+    <div class="article-info">
+        <p>By:</p>
+        <p class="author"><a href="https://kotranimation.com/" target="_blank">Jorge Aguilar Palacios</a></p>
+        <p>|  Dec 30, 2020</p>
+    </div>
+    <div class="article">
+        <p>When I play a game on my Android, I don't really expect high quality, I expect a game that would be okay for mobile. This game is different, however, because it was made for Steam and then ported to the phone. This makes my expectations a lot higher.</p>
+        <p>The game is incredibly simple to figure out: kill everyone and try not to get caught. There is no real learning curve and it does not get more complex than press a kill button or set up a trap that was placed in the level. It brings nothing new or innovating to this kind of genre or gameplay. It just is here and that's about as good as the game gets.</p>
+        <p>The story is poorly executed; I can see what the dev was going for but he did not do it well at all. it would be cliche and predictable if it was set up correctly but that's the problem, it's not written like it had been thought out, edited, or outlined. The end can be shown to not make any sense just by going through the story. The reveal is a face palming cliche and has the character coming to a weird justification that was not ever alluded to. The cutscenes are the worst part, the voice acting is awful and the story is laughable; every cutscene needed a lot more time in editing.</p>
+        <p>The glitches and bugs are rampant, I normally lost because a debug popped up and took over the screen or a zoom in/out disoriented me and this happens so often. I'd wager that you won't go through a level where the debug did not pop up at least once. And its really hard to lose, you can literally walk through the level killing willy nilly with cops and detectives chasing you the entire time (I tested this and it works).</p>
+        <p>This game was not ready for release and deserves no praise due to its lack of innovation, the fact that it isn't good enough to be a cliche, and all around unfinished format.</p>
+    </div>
+</div>
+
+
+<!--container-->
+
+<!--foot-->
+    <div class="foot-container footer">
+        <div class="row subscribe">
+            <h2>Subscribe to our newsletter!</h2>
+            <input class="form-control col-sm-6" type="email" id="email" placeholder="Email Address" name="email">
+            <button class="btn btn-primary col-sm-6" type="submit" name="submit" id="submit-button">Submit</button>
+        </div>
+        <div class="row social">
+            <a href="https://twitter.com/SirJAAguilar" target="_blank"><img src="./images/Twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/KOTRAnimation" target="_blank"><img src="./images/Facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/cg_aggy/" target="_blank"><img src="./images/Instagram.png" alt=""></a>
+        </div>
+    </div>
+<!--footer end-->
+
+
+  <script>
+
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+
+    hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+    link.classList.toggle("fade");
+});
+});
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <script>
+        const tl = gsap.timeline({ defaults: {ease: "power1.out"}});
+        tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
+        tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5});
+        tl.to(".intro", {y: "-100%", duration: 1}, "-=1");
+        tl.fromTo(".test img" , {opacity:0}, {opacity:1, duration:1});
+
+
+
+    </script>

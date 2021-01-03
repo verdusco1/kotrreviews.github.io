@@ -162,7 +162,7 @@ body {
   .tiles {
     display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(6, 8vw);
+  grid-template-rows: repeat(6, 9vw);
   grid-gap: 1rem;
 
 
@@ -238,6 +238,12 @@ body {
     background-color: #eefbfb;
     overflow: ;
     box-shadow: 0 2px 20px rgba(218, 214, 214, 0.911), 0 1px 1px rgb(170, 170, 170);
+
+  }
+
+  .tile a {
+    text-decoration: none;
+    color: black;
 
   }
 

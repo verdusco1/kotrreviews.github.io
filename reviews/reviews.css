@@ -1,0 +1,33 @@
+.review-container {
+    margin:13vh auto 0 auto;
+    background:re;
+    height: 80vh;
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+align-items: center;
+    text-align: ;
+
+}
+
+#title {
+    font-size: 3rem;
+}
+
+.article-info {
+    margin: 1.5rem 0px 0px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background:;
+    display:flex;
+    color: rgb(172, 172, 172);
+
+}
+
+.article-info p {
+    margin: 0px 5px
+}
+
+.author a {
+    color:#007cc7;
+    text-decoration: none;
+}

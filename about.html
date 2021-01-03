@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <title>Reviews</title>
+</head>
+<body>
+
+
+    <!--Hamburger-->
+    <nav id="navbar">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Reviews</a></li>
+            <li><a href="opinion.html">News & Opinion</a></li>
+            <li><a class="current" href="about.html">About</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://twitter.com/SirJAAguilar" target="_blank"><img src="./images/twitter-24.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/KOTRAnimation" target="_blank"><img src="./images/facebook-3-24.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/cg_aggy/" target="_blank"><img src="./images/instagram-24.png" alt="instagram"></a>
+        </div>
+      </nav>
+    <!--Hamburger end-->
+
+<!--container-->
+      <div class="about-container">
+        <h1>About Us</h1>
+        <h2>A Tale of Three Companies</h2>
+        <div>
+            <p>Knights of the Round Animation has taken on multiple projects which were not all animation based. Part of this split into other businesses are Knights of the Round Publishing, Knights of the Round Reviews, and the original Knights of the Round Animation.</p>
+            <p>You can view the site exclusively for the Founder and owner, Jorge A. Aguilar at KOTRAnimation.com</p>
+        </div>
+        <button class="button" type="submit" name="submit" id="submit-button">
+            <a href="https://kotranimation.com/" target="_blank">Get in Touch</a>
+        </button>
+    </div>
+
+<!--container-->
+
+<!--foot-->
+    <div class="foot-container footer">
+        <div class="row subscribe">
+            <h2>Subscribe to our newsletter!</h2>
+            <input class="form-control col-sm-6" type="email" id="email" placeholder="Email Address" name="email">
+            <button class="btn btn-primary col-sm-6" type="submit" name="submit" id="submit-button">Submit</button>
+        </div>
+        <div class="row social">
+            <a href="https://twitter.com/SirJAAguilar" target="_blank"><img src="./images/Twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/KOTRAnimation" target="_blank"><img src="./images/Facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/cg_aggy/" target="_blank"><img src="./images/Instagram.png" alt=""></a>
+        </div>
+    </div>
+<!--footer end-->
+
+
+  <script>
+
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+
+    hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+    link.classList.toggle("fade");
+});
+});
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <script>
+        const tl = gsap.timeline({ defaults: {ease: "power1.out"}});
+        tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
+        tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5});
+        tl.to(".intro", {y: "-100%", duration: 1}, "-=1");
+        tl.fromTo(".test img" , {opacity:0}, {opacity:1, duration:1});
+
+
+
+    </script>
