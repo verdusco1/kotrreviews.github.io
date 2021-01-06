@@ -1,6 +1,6 @@
 .about-container {
     margin-top: 8vh;
-    background:red;
+    background:#4da8da;
     height: 80vh;
     text-align: center;
     display: flex;
@@ -21,6 +21,7 @@
 @media screen and (max-width:1024px) {
     .about-container {
         margin: 0 5%;
+        padding: 1rem 0rem;
         height: ;
     }
 }

@@ -359,7 +359,7 @@ body {
   .foot-container {
     bottom: 0px;
     background: #;
-    height: 50vh;
+    height: 80vh;
     background-image: linear-gradient(#007cc7, #12232e);
   }
 
@@ -435,4 +435,14 @@ body {
   .container {
     width: 100%;
     background: #f7f7f7 ;
+  }
+
+  .copyright-info {
+    padding:0px 0px 5px 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    background:#12232e;
+    color: rgba(117, 117, 117, 0.664);
   }
