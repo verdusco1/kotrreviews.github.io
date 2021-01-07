@@ -12,6 +12,7 @@ body {
 
 /*Hamburger*/
 #navbar {
+  z-index: 1;
   height:8vh;
   width: 100%;
   margin:0;
@@ -359,7 +360,7 @@ body {
   .foot-container {
     bottom: 0px;
     background: #;
-    height: 80vh;
+    height: 40vh;
     background-image: linear-gradient(#007cc7, #12232e);
   }
 
@@ -369,6 +370,12 @@ body {
     justify-content: center;
     align-self: center;
     flex-direction: column;
+  }
+
+  @media screen and (max-width: 468px) {
+    .foot-container {
+      height: 60vh;
+    }
   }
 
   .footer div {

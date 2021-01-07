@@ -1,6 +1,9 @@
+body {
+    background:#203647;
+}
+
 .about-container {
     margin-top: 8vh;
-    background:#4da8da;
     height: 80vh;
     text-align: center;
     display: flex;
