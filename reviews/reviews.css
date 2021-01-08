@@ -36,11 +36,21 @@
 }
 
 .share-buttons {
-  background:red;width: 100%;
+  margin-bottom: 10px;;
+  width: 1024px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 
+}
+
+.share-buttons > * {
+  margin:0px 10px;
+}
+
+.fb-share-button {
+  margin: 0;
+  padding-bottom:5px;
 }
 
 /*header end*/
@@ -63,6 +73,11 @@
 @media screen and (max-width: 1024px) {
   .slideshow-container {
     width: 100%;
+  }
+
+  .share-buttons {
+    width: 100%;
+    justify-content: center;
   }
 }
 
