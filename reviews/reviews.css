@@ -35,6 +35,13 @@
   margin: 0px 5px
 }
 
+.share-buttons {
+  background:red;width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
 
 /*header end*/
 
@@ -270,6 +277,3 @@
 }
 
 }
-
-
-/* slidehsow */
