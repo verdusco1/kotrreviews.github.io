@@ -25,7 +25,6 @@ body {
     .about-container {
         margin: 0 5%;
         padding: 1rem 0rem;
-        height: ;
     }
 }
 
@@ -65,10 +64,12 @@ body {
     margin: 0px 5px;
     margin-top: 1.5rem;
     transition: 0.5s;
+    opacity: .8;
+    cursor: pointer;
 }
 
 .button:hover {
-    transform: scale(1.05);
+    opacity: 1;
 }
 
 .button a {
