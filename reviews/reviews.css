@@ -19,7 +19,6 @@
     font-weight: light;
     margin: 1.5rem 0px 1.5rem 0px;
     font-family: 'Times New Roman', Times, serif;
-    background:;
     display:flex;
     color: rgb(172, 172, 172);
 
@@ -96,7 +95,6 @@
 
 
 .imgSlides {
-  position: ;
   display: none;
   height: 100%;
   width: 100%;
@@ -152,7 +150,6 @@
 
 .caption-container {
   text-align: center;
-  background-color: ;
   padding: 2px 16px;
   color: white;
   display: none;
@@ -245,7 +242,6 @@
     margin: 1.5rem 0rem;
     width: 768px;
     line-height: 1.6;
-    background-color: ;
   }
 
   .article p {
@@ -265,13 +261,11 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    text-align: ;
 
 }
 .article {
   width: 80%;
   line-height: 1.6;
-  background-color: ;
 }
 
 #title {
