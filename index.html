@@ -9,6 +9,13 @@
 </head>
 <body>
 
+    <div class="welcome-container">
+        <h1>
+            Welcome to Knights of the Round Reviews
+        </h1>
+        <p>Part of the Knights of the Round Animation Brand</p>
+        <p>The real life counterpart to Games In A Minute. Jorge A. Aguilar writes in the personality of Nathan Gray, one of the hosts for the fictional gaming news show. But these are still real Reviews, News, and Opinions for Video Games.</p>
+    </div>
 
     <!--Hamburger-->
     <nav id="navbar">
@@ -33,14 +40,6 @@
         </div>
       </nav>
     <!--Hamburger end-->
-
-    <div class="welcome-container">
-        <h1>
-            Welcome to Knights of the Round Reviews
-        </h1>
-        <p>Part of the Knights of the Round Animation Brand</p>
-        <p>The real life counterpart to Games In A Minute. Jorge A. Aguilar writes in the personality of Nathan Gray, one of the hosts for the fictional gaming news show. But these are still real Reviews, News, and Opinions for Video Games.</p>
-    </div>
 
 <!--reviews container-->
     <div class="previews-container">
@@ -251,6 +250,27 @@ if (e.target.classList.contains("modal")) {
 }})
     </script>
 
+
+<!--stick navbar-->
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>

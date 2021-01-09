@@ -6,11 +6,11 @@ body {
     box-sizing: border-box;
     background-color: #eefbfb;
     font-family: 'Poppins', sans-serif;
-
     color: #12232e;
 }
 
 /*Hamburger*/
+
 #navbar {
   z-index: 1;
   height:8vh;
@@ -170,7 +170,6 @@ body {
     display:none;
   }
 }
-
 
 /*Hamburger*/
 
