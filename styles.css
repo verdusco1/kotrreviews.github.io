@@ -149,7 +149,6 @@ body {
 }
 
 .logo {
-  background-color: ;
   height: 8vh;
   top: 0px;
   left: 100px;
@@ -178,7 +177,6 @@ body {
 }
 
   .previews-container {
-    background:;
     width: 80%;
     margin:10vh auto 02vh auto;
   }
@@ -201,7 +199,6 @@ body {
     cursor: pointer;
     padding:15px;
     background-color: #eefbfb;
-    overflow: ;
     box-shadow: 0 2px 20px rgba(218, 214, 214, 0.911), 0 1px 1px rgb(170, 170, 170);
 
   }
@@ -292,20 +289,6 @@ body {
     grid-row-end: 7;
   }
 
-
-
-  . {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    background-size: cover;
-
-  }
-
-  .tile h3 {
-    font-size: ;
-  }
-
   .text-preview {
     font-family: 'Times New Roman', Times, serif;
   }
@@ -329,7 +312,6 @@ body {
 
   @media screen and (max-width: 1850px) {
     .previews-container {
-      background:;
       width: 100%;
       margin:10vh auto;
     }
@@ -341,7 +323,6 @@ body {
 
   @media screen and (max-width: 1850px) {
     .previews-container {
-      background:;
       width: 100%;
       margin:10vh auto;
     }
