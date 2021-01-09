@@ -57,7 +57,7 @@ body {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
   .line {
     width: 30px;
     height: 3px;
@@ -158,11 +158,17 @@ body {
   position: fixed;
 }
 
-.logo img {
+.logo a img {
   margin: 0px 10px;
-  width: 50%;
+  width: 50px;
   height:auto;
   object-fit: cover;
+}
+
+@media screen and (max-width: 924px) {
+  .logo {
+    display:none;
+  }
 }
 
 
