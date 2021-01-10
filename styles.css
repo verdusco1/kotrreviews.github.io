@@ -176,6 +176,13 @@ body {
 /* welcome container*/
 #welcome-header {
   text-align: center;
+  font-size:1.5rem;
+}
+
+@media screen and (max-width:1024px) {
+  #welcome-header {
+    width: 100%;
+  }
 }
 
 .welcome-container {
