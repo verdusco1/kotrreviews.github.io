@@ -144,6 +144,7 @@
 <!--copyright info-->
 
 
+<!--Nav-->
   <script>
 
     const hamburger = document.querySelector(".hamburger");
@@ -171,58 +172,9 @@
 
     </script>
 
+<!--Nav-->
 
-
-
-
-<script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 3000); // Change image every 3 seconds
-    }
-    </script>
-
-    <script>
-
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-    const links = document.querySelectorAll(".nav-links li");
-
-    hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-    link.classList.toggle("fade");
-});
-});
-    </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-
-    <script>
-        const tl = gsap.timeline({ defaults: {ease: "power1.out"}});
-        tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
-        tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5});
-        tl.to(".intro", {y: "-100%", duration: 1}, "-=1");
-        tl.fromTo(".test img" , {opacity:0}, {opacity:1, duration:1});
-
-
-
-    </script>
+<!--pop-up image-->
 
     <script>
      const modal = document.querySelector(".modal");
@@ -251,27 +203,8 @@ if (e.target.classList.contains("modal")) {
 }})
     </script>
 
+    <!--pop-up image-->
 
-<!--stick navbar-->
-<script>
-    // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
 
 </body>
 </html>
