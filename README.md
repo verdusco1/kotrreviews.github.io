@@ -1,6 +1,6 @@
 # kotrreviews.github.io
  A gaming review website.
-dun dun dun
+
 
 
 
@@ -42,4 +42,4 @@ dun dun dun
               </a>
           </div>
 
-4.2 Update all necessary artile info.
+4.2 Update all necessary article info.
